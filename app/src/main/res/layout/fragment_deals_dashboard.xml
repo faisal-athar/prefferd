@@ -1,0 +1,136 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context="com.example.faisal.preferred.fragment.DealsDashboardFragment">
+
+  <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:id="@+id/linearLayout5"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:padding="@dimen/fragments_padding"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_weight="0.5"
+        android:background="@color/theme_primary_color"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <ImageView
+          android:id="@+id/imageView5"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:gravity="center"
+          android:src="@drawable/shoe" />
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_toRightOf="@id/imageView5"
+          android:orientation="vertical"
+          android:paddingBottom="15dp"
+          android:paddingLeft="10dp">
+
+          <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/malgun"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="05"
+            android:textColor="#fff"
+            android:textSize="40sp" />
+
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="Active Deals"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+        </LinearLayout>
+
+
+      </RelativeLayout>
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_weight="0.5"
+        android:background="#fae400"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+          android:id="@+id/imageView6"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:gravity="center"
+          android:src="@drawable/earning" />
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_toRightOf="@id/imageView6"
+          android:orientation="vertical"
+          android:paddingBottom="15dp"
+          android:paddingLeft="5dp">
+
+          <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/malgun"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="200"
+            android:textColor="#fff"
+            android:textSize="40sp" />
+
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="Earnings"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+        </LinearLayout>
+
+
+      </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+      android:id="@+id/deals_list"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:paddingLeft="15dp"
+      android:paddingRight="15dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+  </android.support.constraint.ConstraintLayout>
+
+</layout>

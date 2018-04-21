@@ -1,0 +1,46 @@
+<resources>
+  <string name="app_name">Preferred</string>
+  <string name="slide_1_title">Welcome to (P)referred</string>
+  <string name="slide_1_desc">The location-based marketplace where local business offer amazing deals to you and your friends </string>
+
+  <string name="slide_2_desc">Browse through available deals ans claim the ones you like. Redeem the ones you want before their timer runs out !</string>
+
+  <string name="slide_3_desc">Get a referral link to share the same deal with your friends. If they buy, you earn in for their purchase </string>
+
+  <string name="facebook_app_id">[app_id]</string>
+  <string name="fb_login_protocol_scheme">fb[app_id]</string>
+  <string name="my_key_hash">dRnqTIQWrcQBdUwaEWxKfKbN6lo=</string>
+  <string name="title_activity_login">Log in</string>
+
+  <!-- Strings related to login -->
+  <string name="prompt_email">Email</string>
+  <string name="prompt_password">Password (optional)</string>
+  <string name="action_sign_in">Sign in or register</string>
+  <string name="action_sign_in_short">Sign in</string>
+  <string name="error_invalid_email">This email address is invalid</string>
+  <string name="error_invalid_password">This password is too short</string>
+  <string name="error_incorrect_password">This password is incorrect</string>
+  <string name="error_field_required">This field is required</string>
+  <string name="permission_rationale">"Contacts permissions are needed for providing email
+    completions."
+  </string>
+
+  <string name="verification_screen_1_text">Please enter the country code and mobile number you wish to register with this account. You will receive an SMS code on the number to complate and verify your registration </string>
+  <string name="verification_screen_2_text">Please enter the 6 digit code you just received through sms</string>
+
+  <string name="deal_buy_message">If you’re ready to buy, just choose your preferred payment method and click the buy button to generate your code.</string>
+  <string name="thankyou_message">Congratulations! You have successfully redeemed this deal! Give it a rating so we know how you liked it.</string>
+  <string name="share_message">If you would like to start earning from this purchase, use the link below to share with all your friends who would enjoy this deal as well. If they buy, you get paid as well!</string>
+  <string name="wallet_message">Use one of the options below to load up your wallet. Unless paying cash, it is recommended to have your wallet pre-loaded with money for redeeming deals.</string>
+  <string name="support_message">If you’re having trouble getting setup or need other information, send us a quick note and we’ll get back to you.</string>
+  <string name="title_activity_dashboard">Dashboard</string>
+
+  <string name="openDrawer">open_drawer</string>
+  <string name="closeDrawer">close_drawer</string>
+
+  <string name="nav_preferences">PREFERENCES</string>
+
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

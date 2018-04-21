@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="50dp"
+  android:gravity="center_vertical">
+
+  <android.support.constraint.ConstraintLayout
+    android:id="@+id/cash_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:paddingBottom="10dp"
+    android:paddingEnd="@dimen/fragments_padding"
+    android:paddingStart="@dimen/fragments_padding"
+    android:paddingTop="10dp">
+
+    <TextView
+      android:id="@+id/title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_toEndOf="@+id/paisa"
+      android:fontFamily="@font/malgun"
+      android:includeFontPadding="false"
+      android:text="Cash"
+      android:textColor="@color/text_black"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/paisa"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+      android:id="@+id/paisa"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:src="@drawable/sim" />
+
+      <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/paisa" />
+
+    </RelativeLayout>
+
+  </android.support.constraint.ConstraintLayout>
+</LinearLayout>

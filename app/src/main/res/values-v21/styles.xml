@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimaryDark" tools:targetApi="23">@color/light_background</item>
+    <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+    <item name="colorControlNormal">#fff</item>
+    <item name="colorControlActivated">#fff</item>
+    <item name="colorControlHighlight">#fff</item>
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+</resources>

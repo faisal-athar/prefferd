@@ -1,0 +1,91 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context="com.example.faisal.preferred.fragment.SupportFragment">
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/fragments_padding"
+      android:focusable="true"
+      android:clickable="true"
+      android:focusableInTouchMode="true">
+
+      <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/malgun"
+        android:text="@string/support_message"
+        android:textColor="@color/text_grey"
+        android:textAlignment="center"
+        android:maxWidth="450dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/text_input_bg"
+        android:paddingLeft="8dp"
+        android:paddingRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31">
+
+        <android.support.v7.widget.AppCompatSpinner
+          android:id="@+id/message_type"
+          style="@style/CustomSpinner"
+          android:layout_width="match_parent"
+          android:backgroundTint="#000"
+          android:spinnerMode="dropdown"
+          app:backgroundTint="#000" />
+
+      </LinearLayout>
+
+      <EditText
+        android:id="@+id/message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/text_input_bg"
+        android:ems="10"
+        android:fontFamily="@font/malgun"
+        android:gravity="left|top"
+        android:hint="Message"
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:paddingTop="10dp"
+        android:textColor="@color/text_grey"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+      <android.support.v7.widget.AppCompatButton
+        android:id="@+id/save"
+        style="@style/CustomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/malgun"
+        android:text="Submit"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/message" />
+    </android.support.constraint.ConstraintLayout>
+
+
+  </ScrollView>
+
+
+
+</layout>

@@ -1,0 +1,183 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context="com.example.faisal.preferred.fragment.WalletFragment">
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/malgun"
+        android:maxWidth="250dp"
+        android:padding="@dimen/fragments_padding"
+        android:text="@string/wallet_message"
+        android:textColor="@color/text_grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="354dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30">
+
+        <RelativeLayout
+          android:id="@+id/cash_container"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/payment_selector_effect"
+          android:clickable="true"
+          android:focusable="true"
+          android:gravity="center_vertical"
+          android:paddingBottom="10dp"
+          android:paddingEnd="@dimen/fragments_padding"
+          android:paddingStart="@dimen/fragments_padding"
+          android:paddingTop="10dp">
+
+          <RelativeLayout
+            android:id="@+id/paisa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:alpha="0"
+              android:src="@drawable/sim" />
+
+            <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true"
+              android:src="@drawable/paisa" />
+
+          </RelativeLayout>
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/paisa"
+            android:fontFamily="@font/malgun"
+            android:includeFontPadding="false"
+            android:text="Cash"
+            android:textColor="@color/text_grey"
+            android:textSize="16sp" />
+
+          <ImageView
+            android:id="@+id/cash_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/check" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+          android:id="@+id/sim_sim_container"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="3dp"
+          android:background="@drawable/payment_selector_effect"
+          android:paddingBottom="10dp"
+          android:clickable="true"
+          android:focusable="true"
+          android:paddingEnd="@dimen/fragments_padding"
+          android:paddingStart="@dimen/fragments_padding"
+          android:paddingTop="10dp">
+
+          <ImageView
+            android:id="@+id/sim_sim_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/sim" />
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/sim_sim_icon"
+            android:fontFamily="@font/malgun"
+            android:includeFontPadding="false"
+            android:text="SIM SIM"
+            android:textColor="@color/text_grey"
+            android:textSize="16sp" />
+
+          <ImageView
+            android:id="@+id/sim_sim_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/check"
+            android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="3dp"
+          android:paddingBottom="10dp"
+          android:paddingEnd="@dimen/fragments_padding"
+          android:paddingStart="@dimen/fragments_padding"
+          android:paddingTop="10dp">
+
+          <RelativeLayout
+            android:id="@+id/promo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:alpha="0"
+              android:src="@drawable/sim" />
+
+            <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true"
+              android:src="@drawable/promo" />
+
+          </RelativeLayout>
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/promo"
+            android:fontFamily="@font/malgun"
+            android:includeFontPadding="false"
+            android:layout_centerVertical="true"
+            android:text="Add promo code"
+            android:textColor="@color/text_grey"
+            android:textSize="16sp" />
+
+        </RelativeLayout>
+      </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+  </ScrollView>
+</layout>

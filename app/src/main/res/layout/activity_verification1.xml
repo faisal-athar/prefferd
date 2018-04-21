@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#fff"
+  tools:context="com.example.faisal.preferred.activity.VerificationActivity1">
+
+  <LinearLayout
+    android:id="@+id/header_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_background"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true">
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/malgun"
+      android:paddingBottom="8dp"
+      android:paddingTop="8dp"
+      android:text="Account Verification"
+      android:textAlignment="center"
+      android:textColor="#000"
+      android:textSize="18sp" />
+
+  </LinearLayout>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/header_layout"
+
+    >
+
+    <android.support.constraint.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_alignParentStart="true"
+      android:paddingBottom="20dp"
+      android:paddingLeft="20dp"
+      android:paddingRight="20dp"
+      android:paddingStart="20dp"
+      android:paddingTop="20dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.0"
+      >
+
+      <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/malgun"
+        android:text="@string/verification_screen_1_text"
+        android:textAlignment="center"
+        android:textColor="@color/text_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <LinearLayout
+        android:id="@+id/inputs_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info">
+
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="50dp"
+          android:layout_weight="0.3"
+          android:background="@drawable/combined_input_left_side"
+          android:orientation="vertical">
+
+          <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/codes_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#000"
+            android:clipToPadding="true"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textSize="14sp"
+            app:backgroundTint="#000" />
+        </LinearLayout>
+
+        <EditText
+          android:id="@+id/phone"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="0.7"
+          android:background="@drawable/combined_input_right_side"
+          android:fontFamily="@font/malgun"
+          android:hint="e.g 03350148727"
+          android:inputType="phone"
+          android:maxLines="1"
+          android:gravity="center_vertical"
+          android:paddingEnd="10dp"
+          android:paddingStart="10dp"
+          android:clipToPadding="true"
+          android:textColor="#000"
+          android:textColorHint="#CECECE"
+          android:textCursorDrawable="@null"
+          android:textSize="14sp" />
+      </LinearLayout>
+
+      <android.support.v7.widget.AppCompatButton
+        android:id="@+id/submit"
+        style="@style/CustomButton"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Submit"
+        android:textSize="18sp"
+        app:fontFamily="@font/malgunbd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputs_container" />
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/malgun"
+        android:text="Cancel"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/submit" />
+
+    </android.support.constraint.ConstraintLayout>
+  </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

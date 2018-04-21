@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <TextView
+    android:id="@+id/menu_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/malgun"
+    android:paddingBottom="14dp"
+    android:paddingTop="14dp"
+    android:text="TextView"
+    android:textAlignment="center"
+    android:textColor="@color/text_grey"
+    android:textSize="16sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+      android:id="@+id/menu_item_divider"
+      android:layout_width="70dp"
+      android:layout_height="1dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/menu_item"
+      android:background="#EFEFEF"/>
+  
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context="com.example.faisal.preferred.activity.SignupActivity">
+
+  <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ScrollView
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="true">
+
+
+        <android.support.constraint.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentEnd="true"
+          android:padding="@dimen/fragments_padding">
+
+          <android.support.design.widget.TextInputLayout
+            android:id="@+id/first_name_layout"
+            style="@style/CustomInputLayout"
+            app:hintTextAppearance="@style/TextInputLabelStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.design.widget.TextInputEditText
+              android:id="@+id/first_name"
+              style="@style/CustomEditText"
+              android:fontFamily="@font/malgun"
+              android:hint="First Name"
+              android:inputType="text" />
+          </android.support.design.widget.TextInputLayout>
+
+          <android.support.design.widget.TextInputLayout
+            android:id="@+id/last_name_layout"
+            style="@style/CustomInputLayout"
+            android:layout_marginTop="12dp"
+            app:hintTextAppearance="@style/TextInputLabelStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/first_name_layout">
+
+            <android.support.design.widget.TextInputEditText
+              android:id="@+id/last_name"
+              style="@style/CustomEditText"
+              android:fontFamily="@font/malgun"
+              android:hint="Last Name"
+              android:inputType="text" />
+          </android.support.design.widget.TextInputLayout>
+
+          <android.support.design.widget.TextInputLayout
+            android:id="@+id/email_layout"
+            style="@style/CustomInputLayout"
+            android:layout_marginTop="12dp"
+            app:hintTextAppearance="@style/TextInputLabelStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/last_name_layout">
+
+            <android.support.design.widget.TextInputEditText
+              android:id="@+id/email"
+              style="@style/CustomEditText"
+              android:fontFamily="@font/malgun"
+              android:hint="Email"
+              android:inputType="textEmailAddress" />
+
+          </android.support.design.widget.TextInputLayout>
+
+          <android.support.design.widget.TextInputLayout
+            android:id="@+id/password_layout"
+            style="@style/CustomInputLayout"
+            android:layout_marginTop="12dp"
+            app:hintTextAppearance="@style/TextInputLabelStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_layout">
+
+            <android.support.design.widget.TextInputEditText
+              android:id="@+id/password"
+              style="@style/CustomEditText"
+              android:fontFamily="@font/malgun"
+              android:hint="Password"
+              android:enabled="false"
+              android:inputType="textPassword" />
+
+          </android.support.design.widget.TextInputLayout>
+
+          <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/malgun"
+            android:text="Gender"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_layout" />
+
+          <LinearLayout
+            android:id="@+id/gender_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <Button
+              android:id="@+id/male"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:layout_weight="0.5"
+              android:background="@drawable/gender_btn_left"
+              android:fontFamily="@font/malgun"
+              android:text="Male"
+              android:textAllCaps="false"
+              android:textColor="@color/text_grey"
+              android:textSize="14sp" />
+
+            <Button
+              android:id="@+id/female"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:layout_weight="0.5"
+              android:background="@drawable/gender_btn_right_active"
+              android:fontFamily="@font/malgun"
+              android:text="Female"
+              android:textAllCaps="false"
+              android:textColor="#fff"
+              android:textSize="14sp" />
+          </LinearLayout>
+
+          <TextView
+            android:id="@+id/dob_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/malgunfont"
+            android:text="DOB"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gender_container" />
+
+          <LinearLayout
+            android:id="@+id/dob_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dob_label">
+
+            <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginEnd="8dp"
+              android:layout_weight="0.3"
+              android:background="@drawable/text_input_bg">
+
+              <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/day"
+                style="@style/CustomSpinner"
+                app:backgroundTint="#000"
+                android:backgroundTint="#000"
+                android:layout_width="match_parent"
+                android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginEnd="8dp"
+              android:layout_weight="0.3"
+              android:background="@drawable/text_input_bg">
+
+              <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/month"
+                app:backgroundTint="#000"
+                android:backgroundTint="#000"
+                style="@style/CustomSpinner"
+                android:layout_width="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.4"
+              android:background="@drawable/text_input_bg">
+
+              <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/year"
+                style="@style/CustomSpinner"
+                app:backgroundTint="#000"
+                android:backgroundTint="#000"
+                android:layout_width="match_parent" />
+
+            </LinearLayout>
+
+
+          </LinearLayout>
+
+          <android.support.v7.widget.AppCompatButton
+            android:id="@+id/save"
+            style="@style/CustomButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/malgunbd"
+            android:text="SAVE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dob_container" />
+
+          <TextView
+            android:id="@+id/change_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/malgun"
+            android:text="Change"
+            android:textColor="#4600c7"
+            app:layout_constraintBottom_toBottomOf="@+id/password_layout"
+            app:layout_constraintEnd_toEndOf="@+id/password_layout"
+            app:layout_constraintTop_toTopOf="@+id/password_layout" />
+
+        </android.support.constraint.ConstraintLayout>
+      </RelativeLayout>
+    </ScrollView>
+    <include
+      android:id="@+id/mProgressView"
+      layout="@layout/loading" />
+  </android.support.constraint.ConstraintLayout>
+</layout>

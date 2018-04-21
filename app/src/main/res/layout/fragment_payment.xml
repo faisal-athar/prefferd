@@ -1,0 +1,121 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  tools:context="com.example.faisal.preferred.fragment.PaymentFragment">
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/fragments_padding">
+
+      <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:background="@drawable/text_input_bg"
+        android:paddingStart="0dp"
+        android:paddingTop="0dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.AppCompatSpinner
+          android:id="@+id/payment"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:backgroundTint="#000"
+          android:spinnerMode="dropdown"
+          app:backgroundTint="#000" />
+
+      </LinearLayout>
+
+      <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/malgunbd"
+        android:includeFontPadding="false"
+        android:text="PKR 300"
+        android:textColor="@color/text_grey"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+      <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/malgun"
+        android:includeFontPadding="false"
+        android:text="AVAILABLE CASH"
+        android:textColor="@color/text_grey"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+      <LinearLayout
+        android:id="@+id/qr_code_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/qr_code_bg"
+        android:orientation="vertical"
+        android:paddingBottom="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18">
+
+        <include layout="@layout/deal_list_item" />
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#eeeeee" />
+
+        <TextView
+          android:id="@+id/textView19"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:fontFamily="@font/malgun"
+          android:text="show this qr code to brand"
+          android:textAlignment="center"
+          android:textColor="@color/text_grey"
+          android:textSize="12sp" />
+
+        <ImageView
+          android:id="@+id/qr_code"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:src="@drawable/border_shadow" />
+
+      </LinearLayout>
+
+      <Button
+        android:id="@+id/buy"
+        style="@style/CustomButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/malgunbd"
+        android:text="Buy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qr_code_container" />
+
+    </android.support.constraint.ConstraintLayout>
+
+  </ScrollView>
+
+
+
+</layout>

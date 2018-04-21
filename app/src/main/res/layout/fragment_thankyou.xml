@@ -1,0 +1,208 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context="com.example.faisal.preferred.fragment.ThankYouFragment">
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/fragments_padding">
+
+      <TextView
+        android:id="@+id/textView26"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/malgunbd"
+        android:includeFontPadding="false"
+        android:text="THANK YOU"
+        android:textAlignment="center"
+        android:textColor="#A5A5A5"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/malgun"
+        android:gravity="center"
+        android:maxWidth="400dp"
+        android:text="@string/thankyou_message"
+        android:textColor="@color/text_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+      <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/malgunbd"
+        android:text="Rate your experience"
+        android:textColor="@color/text_grey"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+      <me.zhanghai.android.materialratingbar.MaterialRatingBar
+        android:id="@+id/ratings"
+        style="@style/Widget.MaterialRatingBar.RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:rating="2.5"
+        android:stepSize="0.5"
+        android:theme="@style/RatingBarStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27"
+        app:mrb_indeterminateTint="@color/theme_primary_color"
+        app:mrb_indeterminateTintMode="src_over"
+        app:mrb_progressTint="@color/theme_primary_color"
+        app:mrb_secondaryProgressTint="@color/theme_primary_color" />
+
+      <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/text_input_bg"
+        android:ems="10"
+        android:fontFamily="@font/malgun"
+        android:gravity="top|left"
+        android:hint="Comments (optional)"
+        android:textColor="#000"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:textColorHint="@color/text_grey"
+        android:textCursorDrawable="@null"
+        android:paddingTop="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratings" />
+
+      <Button
+        android:id="@+id/submit_ratings"
+        style="@style/CustomButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/malgun"
+        android:text="Submit"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+      <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/malgun"
+        android:text="Share with friends"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit_ratings" />
+
+      <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/malgun"
+        android:maxWidth="400dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/share_message"
+        android:textAlignment="center"
+        android:textColor="@color/text_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+      <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29">
+
+
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="0.4"
+          android:background="@drawable/combined_input_left_side"
+          android:ellipsize="end"
+          android:gravity="center"
+          android:paddingLeft="5dp"
+          android:paddingRight="5dp"
+          android:singleLine="true"
+          android:text="im.preferred.com/zshanjavaid" />
+
+        <Button
+          android:id="@+id/share"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="@drawable/share_btn"
+          android:fontFamily="@font/malgun"
+          android:text="Share"
+          android:textAllCaps="false"
+          android:textColor="#fff"
+          android:textSize="18sp" />
+
+
+      </LinearLayout>
+
+      <TextView
+        android:id="@+id/copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/malgun"
+        android:text="Copy"
+        android:textColor="@color/text_grey"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+      <Button
+        android:id="@+id/view_more"
+        style="@style/CustomButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/malgun"
+        android:text="View More Deals"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/copy"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+  </ScrollView>
+
+
+
+
+
+</layout>

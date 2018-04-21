@@ -1,0 +1,29 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.faisal.preferred.fragment.HomeFragment">
+
+    <android.support.v7.widget.RecyclerView
+      android:id="@+id/deals_list"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scrollbars="vertical" />
+
+    <ImageButton
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_marginStart="10dp"
+      android:id="@+id/menuButton"
+      android:layout_marginTop="10dp"
+      android:background="@android:color/transparent"
+      android:padding="10dp"
+      android:src="@drawable/menubutton"/>
+
+  </RelativeLayout>
+
+</layout>
+

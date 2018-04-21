@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#3F51B5</color>
+  <color name="colorPrimaryDark">#303F9F</color>
+  <color name="colorAccent">#FF4081</color>
+  <color name="transparent">#00000000</color>
+
+  <!-- dots inactive colors -->
+  <color name="dot_inactive">#CCCCCC</color>
+  <color name="theme_ripple_color">#d7baf7</color>
+  <color name="theme_primary_color">#8F40E9</color>
+  <color name="theme_primary_color_hover">#ae76ef</color>
+
+  <color name="light_background">#f9f9f9</color>
+  <color name="text_grey">#AEAEAE</color>
+  <color name="text_dark_grey">#CFCFCF</color>
+  <color name="text_black">#140404</color>
+  <color name="QRCodeWhiteColor">#fff</color>
+</resources>

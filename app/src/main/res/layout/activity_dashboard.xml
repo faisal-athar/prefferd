@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <android.support.design.widget.AppBarLayout
+    android:id="@+id/toolbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:elevation="0dp"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@color/light_background"
+      />
+
+  </android.support.design.widget.AppBarLayout>
+
+
+  <android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar_layout"
+    android:layout_marginRight="-64dp"
+    android:fitsSystemWindows="false"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:openDrawer="start">
+
+    <include
+      layout="@layout/app_bar_main"
+      android:layout_width="match_parent"
+      android:layout_height="fill_parent"
+      android:layout_marginRight="64dp" />
+
+    <android.support.design.widget.NavigationView
+      android:id="@+id/nav_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="start"
+      android:background="#fff"
+      android:fitsSystemWindows="true"
+      android:textAlignment="center">
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+          android:id="@+id/navheader"
+          layout="@layout/nav_header_main" />
+
+        <ListView
+          android:id="@+id/itemListView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="-20dp"
+          android:layout_weight="1"
+          android:divider="@null"
+          android:dividerHeight="0dp"
+
+          />
+      </LinearLayout>
+    </android.support.design.widget.NavigationView>
+      <!--app:headerLayout="@layout/nav_header_main"-->
+      <!--app:itemBackground="@drawable/nav_menu_item_bg"-->
+      <!--app:itemTextColor="@color/text_grey"-->
+      <!--app:menu="@menu/drawer_menu" />-->
+
+  </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>
